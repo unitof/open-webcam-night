@@ -45,8 +45,18 @@ h2, h3, h4, h5, h6 {
   white-space: pre-wrap;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 span.space {
   margin: 0 .5em;
+}
+
+.countdown {
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
 }
 
 .hoverchange:hover {
@@ -70,9 +80,4 @@ span.space {
 #dj-nalroc:hover::after {
   left: 0;
   content: "Cortland Mahoney"
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
