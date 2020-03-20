@@ -57,6 +57,26 @@ span.space {
 .countdown {
   font-variant-numeric: tabular-nums;
   text-transform: none;
+  line-height: .9em;
+}
+
+.scroller {
+  width: 80%;
+  margin: 10px;
+  overflow: visible;
+  position: relative;
+  margin: 100px auto;
+}
+
+.scroller svg {
+  overflow: visible;
+}
+
+.scroller #door {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .hoverchange:hover {
