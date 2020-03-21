@@ -1,4 +1,4 @@
-const eventDate = new Date('Mar 21 2020 21:00:00 EST')
+const eventDate = new Date('Mar 21 2020 21:00:00 EDT')
 const element = document.getElementById('door')
 
 function updateCountdown() {
