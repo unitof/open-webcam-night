@@ -73,6 +73,7 @@ span.space {
 }
 
 .scroller #door {
+  pointer-events: none; /* don't block link */
   position: absolute;
   left: 50%;
   top: 50%;
