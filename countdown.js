@@ -1,8 +1,8 @@
-const eventDate = new Date('Mar 21 2020 21:00:00 EDT')
+const nextEventDate = new Date('Mar 21 2020 21:00:00 EDT')
 const element = document.getElementById('door')
 
 function updateCountdown() {
-  const msLeft = eventDate - new Date()
+  const msLeft = nextEventDate - new Date()
 
   if (msLeft < -43200000 && Math.floor(msLeft / 10000) % 2) {
     element.innerHTML = `YOU’RE ${-msLeft}ms TOO LATE BUT` // flash between this…
