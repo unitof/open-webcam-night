@@ -4,7 +4,11 @@ const element = document.getElementById('door')
 function updateCountdown() {
   const msLeft = eventDate - new Date()
 
-  if (msLeft < 0 && Math.floor(msLeft / 10000) % 2) {
+  if (msLeft < -43200000 && Math.floor(msLeft / 10000) % 2) {
+    element.innerHTML = `YOU’RE ${-msLeft}ms TOO LATE BUT` // flash between this…
+  } else if (msLeft < 0) {
+    element.innerHTML = 'ANOTHER WILL COME' // and this foreboding omen every 10 seconds 12 hours after starting
+  } else if (msLeft < 0 && Math.floor(msLeft / 10000) % 2) {
     element.innerHTML = `YOU’RE ${-msLeft}ms LATE` // flash between this…
   } else if (msLeft < 0) {
     element.innerHTML = 'meet.google.com/kdq-mnte-qju' // and URL every 10 seconds once started
