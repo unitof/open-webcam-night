@@ -95,7 +95,7 @@ span.space {
 
 #live-scored:hover::before {
   right: 0;
-  content: "CLOSING SET BY";
+  content: "CLOSING SET";
 }
 
 #dj-nalroc:hover::after {
